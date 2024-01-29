@@ -1,0 +1,20 @@
+package com.springbackend.backend.exception;
+
+import java.util.HashMap;
+import java.util.Map;
+import org.springframework.http.HttpStatus;
+import org.springframework.boot.context.config.ConfigDataLocationNotFoundException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+public class ConactNotFoundAdvice {
+    @ResponseBody
+    @ExceptionHandler(ContactNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public Map<String, String> exceptionHandler(ConfigDataLocationNotFoundException exception){
+        Map<String, String> errorMap=new HashMap<>();
+        errorMap.put("errorMessage", exception.getMessage());
+        return errorMap;
+    }
+}
