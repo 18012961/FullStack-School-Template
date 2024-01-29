@@ -1,0 +1,80 @@
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.custom-notification {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%; /* Adjust as needed */
+}
+
+.custom-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #ffa500, #ff4500);
+  content: '';
+  opacity: 0.6;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.custom-border-glow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid #ffa500;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.custom-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.custom-update-btn {
+  background-color: #700000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.custom-update-btn:hover {
+  background-color: #45a049;
+}
+
+.custom-rainbow-hover {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #700000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.custom-rainbow-hover:hover {
+  background-color: #45a049;
+}
